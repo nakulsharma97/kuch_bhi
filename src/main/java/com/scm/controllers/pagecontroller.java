@@ -30,5 +30,14 @@ public class pagecontroller {
         public String contactPage(Model model){
             return "contact" ;
         }
+        @RequestMapping("/login")
+        public String loginPage(Model model){
+            return "login" ;
+        }
+
+        @RequestMapping("/register")
+        public String registerPage(Model model){
+            return  "register"; 
+        }
     
 }
