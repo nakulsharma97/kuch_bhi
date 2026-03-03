@@ -1,0 +1,65 @@
+<nav data-th-fragment="navbar"
+  class="bg-white sticky top-0 z-50 border-b border-gray-200 shadow-sm">
+
+  <div
+    class="max-w-screen-xl mx-auto flex items-center justify-between h-16 px-6">
+
+    <!-- Logo -->
+    <a href="#" class="flex items-center space-x-3">
+      <img
+        data-th-src="@{images/telephone.png}"
+        class="h-7"
+        alt="Logo"
+      />
+      <span
+        class="text-xl font-semibold whitespace-nowrap text-gray-900">
+        SCM2.0
+      </span>
+    </a>
+    <!-- End Logo -->
+
+    <!-- Navbar Links -->
+    <div
+      class="hidden md:flex items-center space-x-8">
+
+      <a data-th-href="@{'/home'}"
+        class="text-gray-900 hover:text-indigo-600 transition duration-200">
+        Home
+      </a>
+
+      <a data-th-href="@{'/about'}"
+        class="text-gray-900 hover:text-indigo-600 transition duration-200">
+        About
+      </a>
+
+      <a data-th-href="@{'/services'}"
+        class="text-gray-900 hover:text-indigo-600 transition duration-200">
+        Services
+      </a>
+
+      <a data-th-href="@{'/contact'}"
+        class="text-gray-900 hover:text-indigo-600 transition duration-200">
+        Contact
+      </a>
+
+    </div>
+
+    <!-- Right Side Buttons -->
+    <div class="flex items-center gap-3">
+
+      <button
+        type="button"
+        class="text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg text-sm font-medium transition duration-200">
+        Login
+      </button>
+
+      <button
+        type="button"
+        class="text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg text-sm font-medium transition duration-200">
+        Sign Up
+      </button>
+
+    </div>
+
+  </div>
+</nav>
