@@ -5,5 +5,4 @@
     extend: {},
   },
   plugins: [],
-  darkMode: "selector",
 }
