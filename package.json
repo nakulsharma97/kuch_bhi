@@ -27,10 +27,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Smart Contact Manager \u0000 \u0000",
   "devDependencies": {
     "autoprefixer": "^10.4.27",
     "postcss": "^8.5.8",
     "tailwindcss": "^3.4.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakulsharma97/kuch_bhi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nakulsharma97/kuch_bhi/issues"
+  },
+  "homepage": "https://github.com/nakulsharma97/kuch_bhi#readme"
 }

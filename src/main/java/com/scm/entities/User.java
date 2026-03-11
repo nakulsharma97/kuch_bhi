@@ -1,16 +1,18 @@
 package com.scm.entities;
-
+import java.util.*;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Table;
 import jakarta.persistence.Lob;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import jakarta.persistence.Id;
-
+import jakarta.persistence.CascadeType;
 @Entity(name = "user")
 @Table(name = "users")
 @Getter
@@ -27,9 +29,9 @@ public class User {
     @Column(unique = true, nullable = false)
     private String email;
     private String password;
-    @Lob
-    private String about;
-    @Lob
+    @Column(length = 1000)
+    private String About;
+    @Column(length = 1000)
     private String profilePic;
     private String phonenumber;
     // information
@@ -43,4 +45,9 @@ public class User {
     private String providerID;
  
     // add more field if needed
+@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
+   private List<Contact> contacts = new ArrayList<>(); 
+
+
+
 }
