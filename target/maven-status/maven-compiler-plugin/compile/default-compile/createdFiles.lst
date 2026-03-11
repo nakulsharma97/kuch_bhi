@@ -1,2 +1,5 @@
 com\scm\controllers\pagecontroller.class
+com\scm\entities\User.class
+com\scm\entities\User$UserBuilder.class
 com\scm\ScmApplication.class
+com\scm\entities\Providers.class
